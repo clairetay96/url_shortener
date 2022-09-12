@@ -1,0 +1,33 @@
+body {
+	font-family:  Roboto;
+	background-image: linear-gradient(to bottom, cornflowerblue, white);
+	background-repeat:  no-repeat;
+}
+
+#app {
+	text-align:  center;
+	margin-top: 80px;
+}
+
+#url {
+	width:  500px;
+	max-width: 50%;
+	height:  40px;
+	padding-left: 8px;
+	border: none;
+}
+
+#submit-div {
+	margin-top:  30px;
+}
+
+#submit-button {
+	width:  150px;
+	height:  40px;
+	border:  none;
+	background-color: darkgrey;
+}
+
+#response-div {
+	margin-top:  30px;
+}
