@@ -8,9 +8,11 @@ To install and run this app, you need to have the following:
 - Python
 - Node
 
-To run this app, clone the repo, navigate to its root folder and run the following command in command line: 
+To run this app for the first time, clone the repo, navigate to its root folder and run the following command in command line: 
 
-`docker compose up`
+`docker compose up --build`
+
+Subsequently, `docker compose up` should be enough to run the app.
 
 The app will be accessible through a browser at `localhost:8000`. The redirect root URLs will also be through localhost:8000.
 
