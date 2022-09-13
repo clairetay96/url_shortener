@@ -8,13 +8,15 @@ To install and run this app, you need to have the following:
 - Python
 - Node
 
-To run this app for the first time, clone the repo, navigate to its root folder and run the following command in command line: 
+To install: clone the repo, navigate to its root folder. 
 
-`docker compose up --build`
+The first time you run this app, use the following command in command line to build the services: 
 
-If `url_shortener-django exited with code 0`, Ctrl+C to quit the server.
+`docker compose build`
 
-Subsequently, use `docker compose up` to run the app.
+Subsequently, use `docker compose up` to run the app. There may be some errors the first time you run it. If url_shortener-django-1 exits, use Ctrl+C to quit the server and once the containers have stopped, run `docker compose up` again until you see the message 
+```Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.```
 
 The app will be accessible through a browser at `localhost:8000`. The redirect root URLs will also be through localhost:8000.
 
