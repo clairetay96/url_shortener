@@ -12,7 +12,9 @@ To run this app for the first time, clone the repo, navigate to its root folder 
 
 `docker compose up --build`
 
-Subsequently, `docker compose up` should be enough to run the app.
+If `url_shortener-django exited with code 0`, Ctrl+C to quit the server.
+
+Subsequently, use `docker compose up` to run the app.
 
 The app will be accessible through a browser at `localhost:8000`. The redirect root URLs will also be through localhost:8000.
 
