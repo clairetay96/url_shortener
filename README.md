@@ -14,7 +14,14 @@ The first time you run this app, use the following command in command line to bu
 
 `docker compose build`
 
-Subsequently, use `docker compose up` to run the app. There may be some errors the first time you run it. If url_shortener-django-1 exits, use Ctrl+C to quit the server and once the containers have stopped, run `docker compose up` again until you see the message 
+Subsequently, use `docker compose up` to run the app. 
+
+There may be some errors the first time you run it. 
+
+If url_shortener-django-1 exits with the error `django.db.utils.OperationalError: could not connect to server: Connection refused`, then take the following steps:
+
+1. Wait until you see the log for `url_shortener-db-1`: `LOG:  database system is ready to accept connections`
+2. Use Ctrl+C to quit the server and once the containers have stopped, run `docker compose up` again until you see the message 
 ```Starting development server at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.```
 
