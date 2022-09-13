@@ -22,8 +22,11 @@ If url_shortener-django-1 exits with the error `django.db.utils.OperationalError
 
 1. Wait until you see the log for `url_shortener-db-1`: `LOG:  database system is ready to accept connections`
 2. Use Ctrl+C to quit the server and once the containers have stopped, run `docker compose up` again until you see the message 
-```Starting development server at http://0.0.0.0:8000/
-Quit the server with CONTROL-C.```
+
+```
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+```
 
 The app will be accessible through a browser at `localhost:8000`. The redirect root URLs will also be through localhost:8000.
 
