@@ -7,6 +7,10 @@ module.exports = {
     path: path.resolve(__dirname, "./static/frontend"),
     filename: "[name].js",
   },
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000
+  },
   module: {
     rules: [
       {
